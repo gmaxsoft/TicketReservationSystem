@@ -2,6 +2,10 @@
 
 Aplikacja webowa do sprzedaży biletów na wydarzenia muzyczne, z panelem administracyjnym (Filament), płatnościami Przelewy24, integracją z ogłoszeniami OLX oraz obsługą wejścia (QR / skaner).
 
+## Podgląd
+
+![System rezerwacji biletów — panel administracyjny](screenshoot.png)
+
 ## Stack technologiczny
 
 | Warstwa | Technologie |
