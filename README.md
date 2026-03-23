@@ -1,6 +1,6 @@
 # System rezerwacji biletów (TRS)
 
-Aplikacja webowa do sprzedaży biletów na wydarzenia, z panelem administracyjnym (Filament), płatnościami Przelewy24, integracją z ogłoszeniami OLX oraz obsługą wejścia (QR / skaner).
+Aplikacja webowa do sprzedaży biletów na wydarzenia muzyczne, z panelem administracyjnym (Filament), płatnościami Przelewy24, integracją z ogłoszeniami OLX oraz obsługą wejścia (QR / skaner).
 
 ## Stack technologiczny
 
@@ -51,7 +51,10 @@ Aplikacja webowa do sprzedaży biletów na wydarzenia, z panelem administracyjny
 
    ```bash
    php artisan migrate
+   php artisan db:seed
    ```
+
+   `db:seed` tworzy konto administratora opisane poniżej (logowanie do Filament).
 
 6. Dowiązanie publicznego storage (plakaty, pliki publiczne):
 
@@ -59,10 +62,10 @@ Aplikacja webowa do sprzedaży biletów na wydarzenia, z panelem administracyjny
    php artisan storage:link
    ```
 
-7. Konto administratora panelu:
+7. (Opcjonalnie) Zamiast seedera możesz utworzyć konto ręcznie:
 
    ```bash
-   php artisan filament:user --email=admin@example.com --password=TwojeHaslo123 --name="Admin"
+   php artisan filament:user
    ```
 
 ## Panel administracyjny (Filament)
@@ -70,6 +73,17 @@ Aplikacja webowa do sprzedaży biletów na wydarzenia, z panelem administracyjny
 - Domyślna ścieżka: **`/admin`**
 - Strona główna **`/`** przekierowuje gościa do logowania panelu; zalogowany użytkownik trafia na pulpit.
 - W panelu można m.in. zarządzać wydarzeniami, biletami, ogłoszeniami OLX oraz korzystać ze strony **Scanner** (odczyt kodów QR z kamery).
+
+### Logowanie (konto z seedera)
+
+Po wykonaniu `php artisan db:seed` możesz zalogować się tymi danymi:
+
+| Pole | Wartość |
+|------|---------|
+| **E-mail** | `admin@trs.local` |
+| **Hasło** | `TRS_k9Lm#2pQxW` |
+
+**Bezpieczeństwo:** To konto jest przeznaczone do pracy lokalnej / deweloperskiej. **Przed wdrożeniem produkcyjnym zmień hasło** (np. w panelu lub przez `php artisan tinker`) albo usuń użytkownika i utwórz nowe konto. Nie używaj tych samych danych na publicznie dostępnym serwerze.
 
 ## Główne funkcje
 
