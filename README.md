@@ -2,6 +2,21 @@
 
 Aplikacja webowa do sprzedaży biletów na wydarzenia, z panelem administracyjnym (Filament), płatnościami Przelewy24, integracją z ogłoszeniami OLX oraz obsługą wejścia (QR / skaner).
 
+## Stack technologiczny
+
+| Warstwa | Technologie |
+|--------|-------------|
+| **Backend** | [Laravel](https://laravel.com) 13, PHP 8.3+ |
+| **Panel admina** | [Filament](https://filamentphp.com) v5 (Livewire, Alpine.js, Tailwind CSS wg pakietu Filament) |
+| **Baza danych** | MySQL (produkcja / rozwój); SQLite w pamięci w testach PHPUnit |
+| **ORM / sesja / kolejka** | Eloquent; sesja i cache możliwe na sterowniku `database` (tabele z migracji Laravel) |
+| **Płatności** | Przelewy24 (pakiet `mnastalski/przelewy24-php`, lokalna ścieżka `przelewy24/`) |
+| **PDF i QR** | [Dompdf](https://github.com/dompdf/dompdf) 3.x, [chillerlan/php-qrcode](https://github.com/chillerlan/php-qrcode) 5.x |
+| **OLX** | Partner API (`api_olx/`, OAuth2 / bridge w `packages/olx-oauth-bridge/`) |
+| **Marketing** | Facebook Conversion API (serwis w `app/Services/Facebook/`) |
+| **Frontend** | Blade, szablony widoków; skaner QR: [html5-qrcode](https://github.com/mebjas/html5-qrcode) (CDN na stronie Scanner) |
+| **Narzędzia dev** | PHPUnit 12, Laravel Pint, Collision, Faker |
+
 ## Wymagania
 
 - PHP **8.3+**
