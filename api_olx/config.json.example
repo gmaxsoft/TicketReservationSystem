@@ -1,0 +1,8 @@
+{
+  "client_id": "required:7a37aeb5-038a-4b0a-8c1c-5f3e0baf7c1d",
+  "client_secret": "required:38c2d019b685f60c0b9849c73b28161e",
+  "api_key": "required:1f530238-e204-479f-b0e6-acaa26c0b177",
+  "user_agent": "optional:user_agent",
+  "base_url": "optional:https://api.olxgroup.com",
+  "oauth2_path": "optional:oauth/v1/token/",
+}

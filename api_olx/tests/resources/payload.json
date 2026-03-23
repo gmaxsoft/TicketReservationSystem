@@ -1,0 +1,56 @@
+{
+  "title": "[qatest-mercury] Apartamento moderno em Cabanelas",
+  "description": "Imóvel em Cabanelas com boa luminosidade, mobilado, 2 casas de banho. Este anúncio é um teste, não deve ser considerado.",
+  "category_urn": "urn:concept:apartments-for-sale",
+  "contact": {
+    "name": "Joaquim Silva",
+    "phone": "918888888",
+    "email": "joaquim.silva@testmail.com",
+    "photo": "https://i.imgur.com/9Em2tky.png"
+  },
+  "price": {
+    "value": 123000,
+    "currency": "EUR"
+  },
+  "location": {
+    "lat": 41.573603,
+    "lon": -7.214126,
+    "exact": true
+  },
+  "images": [
+    {
+      "url": "https://i.imgur.com/WozSfdQg.jpg"
+    },
+    {
+      "url": "https://i.imgur.com/3YNg1bI.jpg"
+    }
+  ],
+  "movie_url": "https://www.youtube.com/watch?v=2me2WO6C1J8",
+  "attributes": [
+    {
+      "urn": "urn:concept:area-m2",
+      "value": "110"
+    },
+    {
+      "urn": "urn:concept:price-negotiable",
+      "value": "urn:concept:yes"
+    },
+    {
+      "urn": "urn:concept:number-of-rooms",
+      "value": "urn:concept:3"
+    },
+    {
+      "urn": "urn:concept:characteristics",
+      "value": "urn:concept:alarm"
+    },
+    {
+      "urn": "urn:concept:characteristics",
+      "value": "urn:concept:central-heating"
+    },
+    {
+      "urn": "urn:concept:net-area-m2",
+      "value": "110"
+    }
+  ],
+  "site_urn": "urn:site:otodompl"
+}

@@ -7,4 +7,5 @@ enum TicketStatus: string
     case Pending = 'pending';
     case Paid = 'paid';
     case Cancelled = 'cancelled';
+    case Used = 'used';
 }

@@ -1,0 +1,22 @@
+{
+  "title": "{{title}}",
+  "description": "{{description}}",
+  "category_urn": "urn:concept:CHANGE_ME_SET_CATEGORY",
+  "contact": {
+    "name": "Bilety",
+    "phone": "000000000",
+    "email": "tickets@example.com"
+  },
+  "price": {
+    "value": 0,
+    "currency": "PLN"
+  },
+  "location": {
+    "lat": 52.2297,
+    "lon": 21.0122,
+    "exact": false
+  },
+  "images": [],
+  "attributes": [],
+  "site_urn": "urn:site:olxpl"
+}
